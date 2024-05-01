@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Footer from './components/Footer';
+import Header from './components/Header'
+import Main from './components/Main'
 function App() {
+
+  let blogPosts = [
+    {
+        date: "2020-11-12T12:00:00",
+        title: "On the Street in Brooklyn",
+        url: "/pics/blog-image-1.jpg"
+        // content: ""
+    },
+    {
+        date: "2020-11-11T12:00:00",
+        title: "Vintage in Vogue",
+        url: "/pics/blog-image-2.jpg"
+        // content: ""
+    },
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header className='app_header'/>
+      <Main className='app_main' articles={blogPosts}/>
+      <Footer className='app_footer'/>
     </div>
   );
 }
