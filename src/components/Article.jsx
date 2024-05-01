@@ -15,7 +15,7 @@ const Article = ({post}) => {
                 <img src={post.url} alt="" className="post_img" />           
                 <p className='post_content'>{post.content}</p>
                 <aside className='post_aside'>
-                    <li className='post_continue'><a href="">Continues ...</a></li>
+                    <li className='post_continue'><a href="...">Continues ...</a></li>
                 </aside>
             </article>
         </section>
