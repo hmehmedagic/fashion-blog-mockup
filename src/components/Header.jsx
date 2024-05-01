@@ -8,7 +8,7 @@ const Header = () => {
             <h1 className="site_title">Sartre's List</h1>
             <h2 className="site_sub_title">Better Dressed People</h2>
         </div>
-        <Nav showItem1={false} showItem2={false} navClass={'nav_header'}/>
+        <Nav navClass={'nav_header'}/>
     </div>
   )
 }
