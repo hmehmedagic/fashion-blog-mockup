@@ -21,9 +21,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header className='app_header'/>
-      <Main className='app_main' articles={blogPosts}/>
-      <Footer className='app_footer'/>
+      <Header />
+      <Main articles={blogPosts}/>
+      <Footer/>
     </div>
   );
 }

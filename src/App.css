@@ -2,7 +2,9 @@ body {
   border-left: solid lightgray;
   border-width: 5px;
   min-height: 100vh;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   max-width: 1000px;
   margin: auto;
 }
@@ -34,7 +36,6 @@ body {
 .head_container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .post_img {
@@ -46,6 +47,10 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+}
+
+.nav_header{
+margin-bottom: 50px;
 }
 
 .nav_header a {
@@ -104,4 +109,23 @@ body {
 .post_date {
   font-size: 28px;
   color: grey;
+}
+
+.site_title,
+.site_sub_title {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.site_title {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+.site_sub_title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
